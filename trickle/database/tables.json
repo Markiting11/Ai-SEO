@@ -1,0 +1,122 @@
+[
+  {
+    "name": "blog",
+    "fields": [
+      {
+        "name": "title",
+        "type": "text",
+        "description": "The title of the blog post",
+        "options": null
+      },
+      {
+        "name": "slug",
+        "type": "text",
+        "description": "URL friendly slug for the post",
+        "options": null
+      },
+      {
+        "name": "content",
+        "type": "rich_text",
+        "description": "The main content of the blog post",
+        "options": null
+      },
+      {
+        "name": "category",
+        "type": "text",
+        "description": "Category of the post (SEO, AI, Local Business, etc)",
+        "options": null
+      },
+      {
+        "name": "cover_image",
+        "type": "text",
+        "description": "URL of the cover image",
+        "options": null
+      },
+      {
+        "name": "status",
+        "type": "text",
+        "description": "draft or published",
+        "options": [
+          "draft",
+          "published"
+        ]
+      },
+      {
+        "name": "created_at",
+        "type": "datetime",
+        "description": "Creation date",
+        "options": null
+      }
+    ]
+  },
+  {
+    "name": "portfolio",
+    "fields": [
+      {
+        "name": "title",
+        "type": "text",
+        "description": "Project title",
+        "options": null
+      },
+      {
+        "name": "description",
+        "type": "text",
+        "description": "Project description/problem solved",
+        "options": null
+      },
+      {
+        "name": "category",
+        "type": "text",
+        "description": "Type of work (Website, Tool, SEO, etc)",
+        "options": null
+      },
+      {
+        "name": "link",
+        "type": "text",
+        "description": "Live URL of the project",
+        "options": null
+      },
+      {
+        "name": "image",
+        "type": "text",
+        "description": "Screenshot or thumbnail URL",
+        "options": null
+      }
+    ]
+  },
+  {
+    "name": "message",
+    "fields": [
+      {
+        "name": "name",
+        "type": "text",
+        "description": "Sender name",
+        "options": null
+      },
+      {
+        "name": "email",
+        "type": "text",
+        "description": "Sender email",
+        "options": null
+      },
+      {
+        "name": "phone",
+        "type": "text",
+        "description": "Sender phone number",
+        "options": null
+      },
+      {
+        "name": "content",
+        "type": "text",
+        "description": "Message content",
+        "options": null
+      },
+      {
+        "name": "created_at",
+        "type": "datetime",
+        "description": "Submission time",
+        "options": null
+      }
+    ]
+  }
+]
