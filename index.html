@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anwar Ali Sehar | SEO &amp; AI Solutions</title>
+    <meta name="description" content="Local SEO Specialist &amp; AI Tool Builder helping businesses grow with smart digital solutions.">
+    <meta name="keywords" content="Local SEO, AI Tools, Digital Marketing, Web Development, Anwar Ali Sehar">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Anwar Ali Sehar | SEO &amp; AI Solutions">
+    <meta property="og:description" content="Local SEO Specialist &amp; AI Tool Builder helping businesses grow with smart digital solutions.">
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Anwar Ali Sehar | SEO &amp; AI Solutions">
+    <meta name="twitter:description" content="Local SEO Specialist &amp; AI Tool Builder helping businesses grow with smart digital solutions.">
+    
+    <!-- Social Media Image -->
+    <meta property="og:image" content="https://app.trickle.so/storage/public/images/usr_196e96caa8000001/a295c978-3017-4d2d-a66f-75aadc4fcab6.png">
+    <meta name="twitter:image" content="https://app.trickle.so/storage/public/images/usr_196e96caa8000001/a295c978-3017-4d2d-a66f-75aadc4fcab6.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://app.trickle.so/storage/public/images/usr_196e96caa8000001/da6113d9-5f32-4231-92ea-9e8bd0c7811c.png">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        @layer theme {
+        :root {
+            --primary-color: #13BA02;
+            --primary-dark: #0e8a01;
+            --secondary-color: #0f172a; /* slate-900 */
+            --bg-light: #f8fafc; /* slate-50 */
+        }
+    }
+    
+    @layer components {
+        .btn {
+            @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-colors duration-200;
+        }
+        .btn-primary {
+            @apply bg-[var(--primary-color)] text-white hover:bg-[var(--primary-dark)];
+        }
+        .btn-outline {
+            @apply border-2 border-[var(--primary-color)] text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white;
+        }
+        .btn-dark {
+            @apply bg-[var(--secondary-color)] text-white hover:bg-slate-800;
+        }
+        .section-padding {
+            @apply py-16 md:py-24;
+        }
+        .container-custom {
+            @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-md transition-shadow duration-300;
+        }
+    }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+    <div id="root"></div>
+
+    <!-- Shared Utilities and Components -->
+    <script type="text/babel" src="utils/db.js"></script>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+
+    <!-- Home Page Specific Components -->
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/ServicesPreview.js"></script>
+    <script type="text/babel" src="components/PortfolioPreview.js"></script>
+    <script type="text/babel" src="components/ContactCTA.js"></script>
+    <script type="text/babel" src="components/VoiceAssistant.js"></script>
+
+    <!-- Main App -->
+    <script type="text/babel" src="app.js"></script>
+
+    <!-- Chart.js for dashboard if needed later -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+    <script>
+        const ChartJS = window.Chart;
+    </script>
+
+</body>
+
+</html>

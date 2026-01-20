@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal | Anwar Ali Sehar</title>
+    <meta name="description" content="Admin dashboard for content management.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <link rel="icon" href="https://app.trickle.so/storage/public/images/usr_196e96caa8000001/da6113d9-5f32-4231-92ea-9e8bd0c7811c.png">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+    <script>const ChartJS = window.Chart;</script>
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #13BA02;
+            --primary-dark: #0e8a01;
+            --secondary-color: #0f172a;
+            --bg-light: #f8fafc;
+        }
+    }
+    @layer components {
+        .btn { @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium transition-all duration-200 transform active:scale-95; }
+        .btn-primary { @apply bg-[var(--primary-color)] text-white hover:bg-[var(--primary-dark)] shadow-md hover:shadow-lg; }
+        .btn-outline { @apply border border-slate-200 text-slate-600 hover:border-[var(--primary-color)] hover:text-[var(--primary-color)] bg-white; }
+        .input-field { @apply w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-emerald-500/20 outline-none transition-all duration-200 bg-slate-50 focus:bg-white; }
+        .card { @apply bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden; }
+    }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+    <div id="root"></div>
+    <script type="text/babel" src="utils/db.js"></script>
+    
+    <!-- Admin Components -->
+    <script type="text/babel" src="components/AdminLogin.js"></script>
+    <script type="text/babel" src="components/AdminDashboard.js"></script>
+    <script type="text/babel" src="components/AdminSidebar.js"></script>
+    <script type="text/babel" src="components/AdminHeader.js"></script>
+    
+    <script type="text/babel" src="admin-app.js"></script>
+</body>
+</html>
